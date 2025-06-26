@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetalVerse</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+   <!-- Header section (Navbar) -->
+    <div class="navbar">
+        <div class="logo">
+            <h2><i class='bx  bx-florist'></i> PetalVerse.</h2>
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="blocks">
+            <a href="#"><i class='bx  bx-heart'></i> </a>
+            <a href="#"><i class='bx  bx-cart'></i> </a>
+            <a href="#"><i class='bx  bx-user'></i> </a>
+            <a href="#" id="menu"><i class='bx  bx-menu-wide'></i> </a>
+        </div>
+    </div>
+
+    <div class="home" id="home">
+        <div class="content">
+            <h3>Fresh flowers</h3>
+            <span>natural & beautiful flowers</span>
+            <p>From garden to gift with grace,
+            Our flowers make every day special.</p>
+            <a href="#"><button>Shop Now</button></a>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <h1>About Us</h1>
+        <div class="row">
+            <div class="video">
+                <video src="./vdosunflower.mp4" loop autoplay muted></video>
+                <h3>Best flower sellers</h3>
+            </div>
+            <div class="content">
+                <h3>Why choose us?</h3>
+                <p>We’re not just a flower shop — we’re your go-to bloom buddies for every vibe and occasion. 
+                    From handpicked petals to warm, thoughtful packaging, we bring freshness, feel-good moments, 
+                    and a touch of charm to your doorstep. Whether you're celebrating love, friendship, or just brightening 
+                    your space, we make it effortless, beautiful, and totally you.</p>
+                    <p>Because to us, it's more than flowers — it's about making people smile.
+                    Every bouquet is crafted with care, heart, and a little magic. </p>
+                <a href="#"><button>Know More</button></a>
+            </div>
+        </div>   
+    </div>
+
+    <div class="icons-container">
+        <div class="icons">
+            <img src="./freeshipping.jpg" alt="">
+            <div class="info">
+                <h2>Free Delivery</h2>
+                <span>on all orders</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="./cashback.jpg" alt="">
+            <div class="info">
+                <h2>10 days return</h2>
+                <span>moneyback guarantee</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="./gift.jpg" alt="">
+            <div class="info">
+                <h2>offer & gifts</h2>
+                <span>on all orders</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="./payment.jpg" alt="">
+            <div class="info">
+                <h2>secure payment</h2>
+                <span>protected by paypal</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="products" id="products">
+        <h2>Latest Products</h2>
+
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                   <img src="./flower1.jpg" alt=""> 
+                    <div class="icons">
+                        <a href="#" onclick="favourites('Rose bouquet', 495,event)"><i class='bx  bx-heart'></i> </a>
+                        <a href="#" class="cart-btn">add to cart </a>
+                        <a href="#"><i class='bx  bx-share'></i> </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Rose bouquet</h3>
+                    <div class="price">₹495 <span>₹550</span></div>
+                </div>
+            </div>
+
+             <div class="box">
+                <span class="discount">-6%</span>
+                <div class="image">
+                   <img src="./flower4.jpg" alt=""> 
+                    <div class="icons">
+                        <a href="#" onclick="favourites('Red Tulip bouquet', 658,event)"><i class='bx  bx-heart'></i> </a>
+                        <a href="#" class="cart-btn">add to cart </a>
+                        <a href="#"><i class='bx  bx-share'></i> </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Red Tulip bouquet</h3>
+                    <div class="price">₹658 <span>₹700</span></div>
+                </div>
+            </div>
+
+             <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                   <img src="./flower3.jpg" alt=""> 
+                    <div class="icons">
+                        <a href="#" onclick="favourites('Pink Mini carnation', 723,event)"><i class='bx  bx-heart'></i> </a>
+                        <a href="#" class="cart-btn">add to cart </a>
+                        <a href="#"><i class='bx  bx-share'></i> </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Pink Mini carnation</h3>
+                    <div class="price">₹723 <span>₹850</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                   <img src="./flower2.jpg" alt=""> 
+                    <div class="icons">
+                        <a href="#" onclick="favourites('Mocha Sweet bouquet', 648,event)"><i class='bx  bx-heart'></i> </a>
+                        <a href="#" class="cart-btn">add to cart </a>
+                        <a href="#"><i class='bx  bx-share'></i> </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Mocha Sweet bouquet</h3>
+                    <div class="price">₹648 <span>₹720</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                   <img src="./flower5.jpg" alt=""> 
+                    <div class="icons">
+                        <a href="#" onclick="favourites('Flower Pot', 590,event)"><i class='bx  bx-heart'></i> </a>
+                        <a href="#" class="cart-btn">add to cart </a>
+                        <a href="#"><i class='bx  bx-share'></i> </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Flower Pot</h3>
+                    <div class="price">₹520 <span>₹650</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-6%</span>
+                <div class="image">
+                   <img src="./flower 6.jpg" alt=""> 
+                    <div class="icons">
+                        <a href="#" onclick="favourites('Lavender Tulip bouquet', 658,event)"><i class='bx  bx-heart'></i> </a>
+                        <a href="#" class="cart-btn">add to cart </a>
+                        <a href="#"><i class='bx  bx-share'></i> </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Lavender Tulip bouquet</h3>
+                    <div class="price">₹658 <span>₹700</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="review" id="review">
+        <h2>Customers review</h2>
+        <div class="box-container">
+        <div class="box">
+            <div class="stars">
+                <i class='bx  bx-star'></i> 
+                <i class='bx  bx-star'></i> 
+                <i class='bx  bx-star'></i> 
+                <i class='bx  bx-star'></i> 
+                <i class='bx  bx-star'></i> 
+            </div>
+            <p>“I ordered a bouquet for my mom’s birthday and honestly, I didn’t expect it to be this beautiful! 
+                The flowers were super fresh and arranged so elegantly. The delivery was on time, and the packaging was neat and secure — 
+                nothing got squished. Even the fragrance was amazing. My mom was so happy, she almost cried! This flower store is now my go-to 
+                for all special occasions. The prices are reasonable too. I even got a handwritten note added with the bouquet — such a sweet 
+                gesture!”
+            </p>
+
+            <div class="user">
+                <img src="./review1.jpg" alt="">
+                <div class="user-info">
+                    <h3>Rohan Kulkarni</h3>
+                    <span>Happy customer</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="stars">
+                <i class='bx  bx-star'></i> 
+                <i class='bx  bx-star'></i> 
+                <i class='bx  bx-star'></i> 
+                <i class='bx  bx-star'></i> 
+                
+            </div>
+            <p>“I ordered a bouquet for my mom’s birthday and honestly, I didn’t expect it to be this beautiful! 
+                The flowers were super fresh and arranged so elegantly. The delivery was on time, and the packaging was neat and secure — 
+                nothing got squished. Even the fragrance was amazing. My mom was so happy, she almost cried! This flower store is now my go-to 
+                for all special occasions. The prices are reasonable too. I even got a handwritten note added with the bouquet — such a sweet 
+                gesture!”
+            </p>
+
+            <div class="user">
+                <img src="./review2.jpg" alt="">
+                <div class="user-info">
+                    <h3>Aanya Deshmukh</h3>
+                    <span>Happy customer</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="stars">
+                <i class='bx  bx-star'></i> 
+                <i class='bx  bx-star'></i> 
+                <i class='bx  bx-star'></i> 
+                <i class='bx  bx-star'></i> 
+                <i class='bx  bx-star'></i> 
+            </div>
+            <p>This is hands down the best online flower delivery service I’ve tried. The floral arrangements are artistic, elegant, 
+                and exactly like the pictures on the website. I recently gifted a mixed flower basket to a friend who was recovering from surgery, 
+                and she was so touched. The flowers stayed fresh for days! I also appreciate that they have eco-friendly packaging. The site is easy 
+                to use, and payment is smooth too. Thank you for spreading happiness with such beautiful blooms!”
+            </p>
+
+            <div class="user">
+                <img src="./review3.jpg" alt="">
+                <div class="user-info">
+                    <h3>Neha Jain</h3>
+                    <span>Happy customer</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="contact" id="contact">
+        <h2>Contact us</h2>
+        <div class="row">
+            <form action="">
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="number" class="box">
+                <textarea name="" class="box" id="" placeholder="message" cols="30" rows="10"></textarea>
+                <button>Send message</button>
+            </form>
+
+            <div class="image">
+                <img src="./contactus.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">products</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+
+         <div class="box">
+            <h3>extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my orders</a>
+            <a href="#">my favourites</a>
+        </div>
+
+         <div class="box">
+            <h3>Locations</h3>
+            <a href="#">India</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+        </div>
+
+         <div class="box">
+            <h3>contact info</h3>
+            <a href="#">+123-456-7890</a>
+            <a href="#">anushka@gmail.com</a>
+            <a href="#">mumbai, india - 400104</a>
+        </div>
+    </div>
+    <div class="credit">
+        Created by <span>Anushkaa Patil</span> | all rights reserved
+    </div>
+</div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
