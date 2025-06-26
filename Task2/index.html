@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushka's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("cc14BAN31Ao59syBc"); 
+    })();
+  </script>
+</head>
+<body>
+    <div class="navbar">
+    <div class="logo">
+      <h2><i class='bx bxs-home'></i>Portfolio</h2>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li onclick="scrollToSection('home')">Home</li>
+      <li onclick="scrollToSection('skills')">Skills</li>
+      <li onclick="scrollToSection('projects')">Projects</li>
+      <li onclick="scrollToSection('certifications')">Certifications</li>
+      <li onclick="scrollToSection('contact')">Contact</li>
+    </ul>
+
+    <div class="menu-icon" id="menuIcon">
+      <i class='bx bx-menu'></i>
+    </div>
+  </div>
+
+    <div class="home-section" id="home">
+      <div class="home-content">
+        <div class="home-left">
+          <h1>Hi, <span class="highlight">Anushkaa</span> Here!</h1>
+          <h2>I'm a Developer</h2>
+          <p>I make the complex simple.</p>
+          <button class="hire-btn">Know more</button>
+        </div>
+        <div class="home-right">
+          <div class="image-container">
+            <img src="./images/home-img.jpeg" alt="Anushkaa" />
+          </div>
+        </div>  
+      </div>
+    </div> 
+
+    <section class="skills" id="skills">
+      <h2 class="section-title">My Technical Expertise</h2>
+
+      <div class="skills-container">
+        <div class="card">
+          <i class='bx bx-code-alt'></i>
+          <h3>Frontend</h3>
+          <button>HTML</button>
+          <button>CSS</button>
+          <button>JavaScript</button>
+          <button>React</button>
+        </div>
+
+        <div class="card">
+          <i class='bx bx-minus-back'></i>
+          <h3>Backend</h3>
+          <button>Java</button>
+          <button>Python</button>
+          <button>Node.js</button>
+        </div>
+
+        <div class="card">
+          <i class='bx bxs-coin-stack'></i>
+          <h3>Database</h3>
+          <button>MySQL</button>
+          <button>Firebase</button>
+          <button>PostgreSQL</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-container">
+
+        <div class="project-card">
+          <img src="images/VBS.png" alt="Virtual Banking System" class="project-image" />
+          <h3>Virtual Banking System</h3>
+          <a href="https://github.com/anushkaa2704" target="_blank" rel="noopener noreferrer">
+            <button class="btn">Know More</button>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img src="images/FSW.png" alt="Flower Shop Website" class="project-image" />
+          <h3>PetalVerse- A Flower Shop Website</h3>
+          <a href="https://github.com/anushkaa2704" target="_blank" rel="noopener noreferrer">
+            <button class="btn">Know More</button>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <img src="images/DLMS.png" alt="Digital Library Management System" class="project-image" />
+          <h3>Digital Library Management System</h3>
+          <a href="https://github.com/anushkaa2704" target="_blank" rel="noopener noreferrer">
+            <button class="btn">Know More</button>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="certifications" id="certifications">
+  <h2 class="section-title">My Certifications</h2>
+  <div class="timeline">
+
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h3>Databases For Developers</h3>
+        <p class="desc">Certified by: Oracle Corporation</p>
+        <p class="year">2025</p>
+        <button onclick="showCertificate('images/databaseCert.png')">View Certificate</button>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <h3>Python Programming</h3>
+        <p class="desc">Certified by: Udemy</p>
+        <p class="year">2025</p>
+        <button onclick="showCertificate('images/pythonCert.png')">View Certificate</button>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h3>SQL</h3>
+        <p class="desc">Certified by: OneRoadmap</p>
+        <p class="year">2025</p>
+        <button onclick="showCertificate('images/sqlCert.png')">View Certificate</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="modal" class="modal" onclick="hideCertificate()">
+    <img id="modalImage" src="" alt="Certificate">
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <h2 class="section-title">Contact Me</h2>
+
+  <div class="contact-info">
+    <p><i class='bx bx-envelope'></i> anushkaa2704@gmail.com</p>
+    <p><i class='bx bx-phone'></i> +91-9876543210</p>
+    <div class="social-icons">
+      <a href="https://github.com/anushkaa2704" target="_blank"><i class='bx bxl-github'></i></a>
+      <a href="https://www.linkedin.com/in/anushkaa2704" target="_blank"><i class='bx bxl-linkedin'></i></a>
+      <a href="mailto:anushkaa2704@gmail.com"><i class='bx bx-envelope'></i></a>
+      <a href="https://t.me/yourtelegram" target="_blank"><i class='bx bxl-telegram'></i></a>
+    </div>
+  </div>
+
+  <div class="form-wrapper">
+    <form id="contactForm" class="contact-form">
+      <input type="text" name="user_name" placeholder="Your Name" required />
+      <input type="email" name="user_email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+
+
+    <script>
+    const menuIcon = document.getElementById('menuIcon');
+    const navLinks = document.getElementById('navLinks');
+
+    menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    function scrollToSection(id) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+        navLinks.classList.remove('active');
+      }
+    }
+
+    function showCertificate(src) {
+    const modal = document.getElementById('modal');
+    const modalImage = document.getElementById('modalImage');
+    modalImage.src = src;
+    modal.style.display = 'flex';
+  }
+
+  function hideCertificate() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_8g88yg8',   // Your EmailJS Service ID
+      'template_j6oexfb',  // Your EmailJS Template ID
+      this
+    ).then(function () {
+      alert("Message sent successfully!");
+      document.getElementById("contactForm").reset();
+    }, function (error) {
+      alert("Failed to send message. Check console.");
+      console.error(error);
+    });
+  });
+  </script>
+    
+</body>
+</html>
